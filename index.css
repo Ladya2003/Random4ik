@@ -1,0 +1,212 @@
+body{
+    background: url(supernatural-bg-1.jpg);
+    background-size: 100%;
+
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(108, 110, 245);
+    text-shadow: 0px 0px 2px rgba(88, 24, 236, 0.856);
+    font-size: 45px;
+    background-image: url("header.jpg");
+    border-radius: 30px;
+    border: 3px solid rgba(172, 255, 47, 0.63);
+    background-position: 20% 40%;
+    width: 100%;
+    height: 80px;
+}
+.cum{
+    display: block;
+    margin: auto;
+    opacity: 5%;
+}
+h2{
+    text-align: center;
+    color: rgb(144, 43, 238);
+    text-shadow: 0 0 5px rgba(104, 5, 233, 0.562);
+    font-size: 30px;
+    background-color: rgba(79, 238, 39, 0.726);
+    width: 900px;   
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px dashed yellowgreen;
+}
+audio{
+    background-color: rgb(207, 247, 134);
+    border: 5px dashed yellowgreen;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+.right-moving-img{
+    border: 2px dashed rgba(172, 255, 47, 0.774);
+    width: 400px;
+    animation: left-move 10s ease-out infinite;
+    position: relative;
+}
+.left-moving-img{
+    border: 2px dashed rgba(172, 255, 47, 0.774);
+    width: 400px;
+    position: relative;
+    animation: right-move 10s ease-out infinite;
+}
+.center-popping-img{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    transition: 1s;
+    animation-name: center-pop-up;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin-left: 30%;
+    opacity: 0%;
+    flex: right;
+}
+.button{
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.button input{
+    background-color: rgb(241, 175, 32);
+    border: 7px outset;
+    box-shadow: inset 0 0 20px rgb(255, 94, 0);
+    animation: border-color-rgb 5s linear infinite alternate;;
+    padding: 40px;
+    margin: 40px;
+    font-size: 25px;
+    transition: 0.5s;
+    border-radius: 20px/40px;
+}
+input:active{
+    transform: scale(0.9);
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+.random_data{
+    background-color: rgba(226, 182, 146, 0.897);
+    border: 7px ridge rgba(172, 255, 47, 0.651);
+    box-shadow: inset 0 0 10px greenyellow;
+    border-radius: 10px;
+    box-sizing: padding-box;
+    margin-left: 35%;
+    padding: 10px;
+    width: 500px;
+}
+span{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+p{
+    padding: 10px;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    animation: color-rgb 10s linear infinite alternate;
+}
+a:link{
+    color: rgb(241, 38, 72);
+}
+a:active{
+    color: greenyellow;
+}
+a:visited{
+    color: rgb(0, 132, 255);
+}
+@keyframes center-pop-up{
+    from{
+        transform: scale(0);
+        opacity: 100%;
+        background-image: url(naked_boy-1-1.png);
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 100%;
+        background-image: url(naked_boy-1-1.png);
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    }
+    75%{
+        transform: scale(1);
+        opacity: 100%;
+        background-image: url(naked_boy-2.png);
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0%;
+        background-image: url(naked_boy-2.png);
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    }
+}
+@keyframes left-move{
+    from{
+        left: 0px;
+    }
+    50%{
+        left: 400px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@keyframes right-move{
+    from{
+        left: 770px;
+    }
+    50%{
+        left: 400px;
+    }
+    to{
+        left: 770px;
+    }
+}
+@keyframes color-rgb{
+    from{
+        color: rgb(240, 42, 42);
+    }
+    20%{
+        color: rgb(252, 177, 39);
+    }
+    40%{
+        color: rgb(251, 255, 0);
+    }
+    60%{
+        color: rgb(0, 255, 98);
+    }
+    80%{
+        color: rgb(0, 132, 255);
+    }
+    to{
+        color: rgb(176, 50, 235);
+    }
+}
+@keyframes border-color-rgb{
+    from{
+        border-color: rgb(240, 42, 42);
+    }
+    20%{
+        border-color: rgb(252, 177, 39);
+    }
+    40%{
+        border-color: rgb(251, 255, 0);
+    }
+    60%{
+        border-color: rgb(0, 255, 98);
+    }
+    80%{
+        border-color: rgb(0, 132, 255);
+    }
+    to{
+        border-color: rgb(176, 50, 235);
+    }
+}

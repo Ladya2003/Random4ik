@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet">
+        <title>Рандомайзер Сверхов</title>
+        <script>
+            function random(){
+                let season = (Math.random() * 15 + 1).toFixed(0);
+                let series = (Math.random() * 23 + 1).toFixed(0);
+                document.getElementById("text").innerHTML = "<strong><span>Твой сегодняшний рандом:</span></strong> " + "<br>" + "Случайный сезон: " + season + "<br>" + "Случайная серия: " + series + "<br>" + "<a href='https://rezka.ag/series/fantasy/1749-sverhestestvennoe-2005.html#t:1-s:" + season + "-e:" + series + "'>Твоя ссылочка готова:]</a>";
+            }
+            function cum(){
+                document.getElementById("cum").innerHTML = "<div class='center-popping-img'></div>";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Рандомайзер Сверхъестественного</h1>
+        <input class="cum" type="button" value="Нажми на меня:3" onclick="cum()">
+        <audio controls><source src="Kansas.mp3"></audio>
+        <p id="cum"></p>
+        <h2>Стена мемов</h2>
+        <img class="right-moving-img" src="meme3.jpg">
+        <img class="left-moving-img" src="meme.jpg">
+        <div class="button">
+            <input type="button" value="Получи свой рандомный сезон и свою рандомную серию" onclick="random()">
+        </div>
+        <br>
+        <div class="random_data">
+            <p id="text"></p>
+        </div>
+    </body>
+</html>
